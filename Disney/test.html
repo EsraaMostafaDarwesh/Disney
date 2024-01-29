@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+    #form {
+  margin-top: 130px;
+  background-color: rgb(232, 226, 241);
+  width: 95.56%;
+  padding: 100px 30px;
+}
+#form h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+#form form {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 6px;
+}
+#form form h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+#form form #name {
+  display: flex;
+}
+#form form #name .fname label,
+.lname label {
+  display: block;
+  text-transform: capitalize;
+  color: rgb(135, 138, 141);
+  margin-bottom: 6px;
+}
+#form form #name .fname input[type="text"],
+.lname input[type="text"] {
+  outline: none;
+  width: 280px;
+  padding: 5px;
+  border-radius: 15px;
+  border: solid 1px slategrey;
+}
+#form form #name .fname {
+  margin-right: 45px;
+}
+#form form #name .fname input[type="text"]::placeholder,
+.lname input[type="text"]::placeholder {
+  padding-left: 10px;
+}
+#form form div:nth-child(3),
+div:nth-child(4),
+div:nth-child(5) {
+  margin-top: 16px;
+}
+#form form div:nth-child(3) label,
+div:nth-child(4) label,
+div:nth-child(5) label {
+  text-transform: capitalize;
+  display: block;
+  color: rgb(135, 138, 141);
+  margin-bottom: 6px;
+}
+#form form div:nth-child(3) input[type="email"],
+div:nth-child(4) input[type="text"],
+div:nth-child(5) textarea {
+  outline: none;
+  width: 92%;
+  padding: 5px;
+  border-radius: 15px;
+  border: solid 1px slategrey;
+}
+#form form div:nth-child(3) input[type="email"]::placeholder {
+  padding-left: 10px;
+}
+#form form div:nth-child(5) textarea::placeholder {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+#form form div:nth-child(4) input[type="text"]::placeholder {
+  padding-left: 10px;
+}
+#form form div:nth-child(6) input[type="submit"] {
+  display: block;
+  margin: 15px auto;
+  padding: 5px 12px;
+  text-transform: capitalize;
+  outline: none;
+  border: solid 1px rgb(39, 82, 224);
+  border-radius: 10px;
+  background-color: rgb(39, 82, 224);
+  color: white;
+  cursor: pointer;
+}
+#form form div:nth-child(6) input[type="submit"]:hover {
+  background-color: rgb(104, 132, 224);
+  border: solid 1px rgb(104, 132, 224);
+  font-weight: bold;
+}
+
+
+
+
+
+ </style>
+</head>
+<body>
+    <section id="form">
+        <h1>contact us</h1>
+        <form action="" method="">
+          <h3>contact form</h3>
+          <div id="name">
+            <div class="fname">
+              <label for="fname">
+                first name</label
+              >
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="first name"
+              />
+            </div>
+  
+            <div class="lname">
+              <label for="lname">
+                last name</label
+              >
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="last name"
+              />
+            </div>
+          </div>
+  
+          <div class="email">
+            <label for="email" id="email">
+              email</label
+            >
+            <input type="email" name="email" id="email" placeholder="email" />
+          </div>
+  
+          <div class="email">
+            <label for="sub">
+              subject</label
+            >
+            <input type="text" name="sub" id="sub" placeholder="subject" />
+          </div>
+  
+          <div class="mass">
+            <label for="mass">
+              message</label
+            >
+            <textarea
+              name="mass"
+              id="mass"
+              cols="30"
+              rows="10"
+              placeholder="write your message here"
+            ></textarea>
+          </div>
+  
+          <div>
+            <input type="submit" value="send message" />
+          </div>
+        </form>
+      </section>
+</body>
+</html>
